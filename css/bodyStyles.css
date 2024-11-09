@@ -1,0 +1,32 @@
+:root{
+    --gris: #373435;
+    --negro: #181717;
+    --naranja: #F58634;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--gris);
+}
+
+#gal_section{
+    display: flex;
+}
+#img_info{
+    width: 50%;
+}
+#galeria{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    
+}
+
+.box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.box:nth-child(4){
+    grid-column-start: span 2;
+}
