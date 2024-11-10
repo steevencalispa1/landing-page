@@ -100,6 +100,7 @@ body{
     color: white;
 }
 
+/*
 .tipo_etiquetas h1{
     font-family: 'Alumni Sans SC', sans-serif;
     font-size: 27px;
@@ -122,8 +123,19 @@ body{
     height: 200px;
     display: block;
     object-fit: cover;
+}*/
+
+.titulo {
+    font-family: 'Alumni Sans SC', sans-serif;
+    font-size: 19px;
+    color: #F58634;
+    position: relative;
+    text-align: center;
 }
 
+.cards {
+    display: flex;
+}
 
 
 
