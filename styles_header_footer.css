@@ -1,0 +1,55 @@
+header{
+    background:#414345; /* Cambia los colores como prefieras */
+    padding: 5px;
+    text-align: center;
+}
+.herder_pincipal{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.img-logo{
+    width: 150px;
+    padding: 0%;
+    margin: 0%;
+}
+.menu{
+    list-style: none;
+}
+.menu li{
+    display: inline;
+    margin-left: 50px;
+}
+.menu a{
+    color: #F58634;
+    text-decoration: none;
+    font-family: Alumni Sans SC, sans-serif;
+    font-weight: bold;
+}
+footer{
+    background-color: #181717;
+    padding: 5px;
+}
+.footer-principal{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.pie{
+    list-style: none;
+}
+.pie li{
+    display: inline;
+    margin-left: 50px;
+}
+.pie a{
+    color: white;
+    text-decoration: none;
+    font-family: Alumni Sans SC, sans-serif;
+}
+.menu a:hover{
+    color: #ffffff; /* Cambia el color del texto al pasar el cursor sobre las opciones. */
+}
+.pie a:hover{
+    color: #F58634;
+}
