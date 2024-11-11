@@ -8,11 +8,68 @@ header{
     display: flex;
     align-items: center;
 }
+
+.herder_pincipal nav{
+    display: flex;
+    align-items: center;
+}
+
 .img-logo{
     width: 150px;
     padding: 0%;
     margin: 0%;
 }
+.menu-toggle{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#out_drop_Menu{
+    font-size: 30px;
+    cursor: pointer;
+    font-family: Alumni Sans SC, sans-serif;
+    
+}
+
+#out_drop_Menu:hover{
+    color: #F58634;
+}
+
+/* MENU DROP */
+#dropMenu{
+    position:absolute;
+    right: 2rem;
+    top: 100px;
+    height: 0;
+    background-color: #414345;
+    padding: 20px;
+    border-radius: 20px;
+    display: none;
+}
+#dropMenu.open{
+    height: 300px;
+}
+
+#dropMenu li{
+    list-style: none;
+    color: white;
+    font-family: Alumni Sans SC, sans-serif;
+    font-weight: bold;
+    margin: 20px;
+    text-align: left;
+}
+
+#dropMenu a{
+    color: white;
+    text-decoration: none;
+}
+
+#dropMenu a:hover{
+    color: #F58634;
+}
+
 .menu{
     list-style: none;
 }
@@ -52,4 +109,17 @@ footer{
 }
 .pie a:hover{
     color: #F58634;
+}
+
+/* NAVEGACIÓN RESPONSIVE */
+@media (max-width:1025px) {
+    .menu li a {
+        display: none;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .dropMenu{
+        display: block;
+    }
 }

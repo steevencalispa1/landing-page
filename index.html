@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/bodyStyles.css">
     <link rel="stylesheet" href="./css/styles_header_footer.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Alumni+Sans?query=Alumni+Sans+SC">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo&display=swap">
+    
 </head>
 <body>
     <header>
@@ -22,12 +22,31 @@
                 <li><a href="">DONDE COMPRAR</a></li>
                 <li><a href="">COMENTARIOS</a></li>
             </ul>
+            <div class="menu-toggle" onclick="toggleMenu()"><i>☰</i></div>
         </nav>
+        <div id="dropMenu">
+            <ul>
+                <li><a href="">ETIQUETAS</a></li>
+                <li><a href="">ETIQUETAS PERSONALIZADAS <a></li>
+                <li><a href="">DONDE COMPRAR</a></li>
+                <li><a href="">COMENTARIOS</a></li>
+                <li id="out_drop_Menu">x</li>
+            </ul>
+        </div>
     </div>
     </header>
+   
+    <script>
+        const toggleBtn = document.querySelector('.menu-toggle')
+        const toggleBtnIcon = document.querySelector('.menu-toggle i')
+        const dropMenu = document.querySelector('.dropMenu')
+
+        toggleBtn.onclick=function(){
+            dropMenu.classList.toggle('open')
+        }
+    </script>
     <!--Seccion de presentacion-->
     <section class="presentacion">
-        <img src="imagenes/seccion_1.jpeg" class="barriodo_etiquietas">
         <h1 class="empresa">AMERICAN LABEL</h1>
         <p class="text_presentacion">“Somos pioneros en innovación de maquinaria para ofrecer productos de alta calidad a nuestros clientes.”</p>
         <button class="btn_info">MAS INFORMACION</button>
@@ -51,23 +70,23 @@
     <section class="cards">
         <div class="card_1">
             <h2 class="txt_1">TAFETA</h2>
-            <div class="imagen">
+            <!-- <div class="imagen">
                 <img src="imagenes/tipo_tafeta.png" >
-            </div>
+            </div> -->
             <p>La tafeta es un tipo de tejido sencillos y fino. En  el con class="txt"texto de las etiquetas tejidas, las etiquetas de tafeta son ligeras y duraderas, y más economicas; se usa más amenudo para la informacion de tallas, instrucciones de cuidado para la ropa de cama</p>
         </div>
         <div class="card_1">
             <h2 class="txt_2">DAMASCO</h2>
-            <div class="imagen">
+            <!-- <div class="imagen">
                 <img src="imagenes/tipo_damasco.png" alt="">
-            </div>
+            </div> -->
             <p>Las etiquetas de  damasco son de alta definicion y ofrecen una textura mas suave que las tafeta. Permiten un mayor nivel de detalle en los diseños, lo que las hace idelaes  para logotipos complejos o pequeños textos. Se pueden diseñar con texturas, relieves y ligamentos.</p>
         </div>
         <div class="card_1">
             <h2 class="txt_3">SATIN</h2>
-            <div class="imagen">
+            <!-- <div class="imagen">
                 <img src="imagenes/tipo_satin.png" alt="">
-            </div>
+            </div> -->
             <p>Las etiquetas de satín tienen un brillo distintivo y una textura muy suave , lo que las hace sentir lujosas al tacto. Suelen utilizarse para prendas de alta gama, lencería y camisetas y ternos para caballero, debido a su sauvidad y apariencia elegante.</p>
         </div>
     </section>
@@ -198,4 +217,3 @@
     </footer>
 </body>
 </html>
-
