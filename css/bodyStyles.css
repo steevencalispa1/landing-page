@@ -80,3 +80,177 @@
     grid-column-start: span 2;
 }
 
+/* SECCIÓN DE CONTACTANOS */
+
+#contactanos_main{
+    display: flex;
+    padding: 50px;
+}
+
+#con_izq{
+    width: 50%;
+}
+
+#con_izq h2{
+    color: var(--naranja);
+    font-family: 'Alumni Sans SC', sans-serif;
+    margin: 10px;
+}
+
+#con_izq form{
+
+    background-color: var(--negro);
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 10px;
+    font-family: 'Arvo', serif;
+    box-shadow: 10px 10px 5px rgb(41, 41, 41);
+}
+
+form textarea{
+    border-radius: 5px;
+    background-color: var(--gris);
+    border-style: none;
+    margin: 5px;
+}
+
+#txt_mensaje{
+    height: 300px;
+    margin: 5px;
+}
+
+form button{
+    margin: 20px;
+    background-color: var(--naranja);
+    border-style: none;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Alumni Sans SC', sans-serif;
+}
+
+form button:hover{
+    margin: 20px;
+    background-color: rgba(250, 250, 250, 0);
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Alumni Sans SC', sans-serif;
+    border: solid, 2px, var(--naranja);
+}
+
+
+#con_der{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    width: 50%;
+}
+
+#con_der p{
+    color: white;
+    font-family: 'Arvo', serif;
+}
+
+#formas{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.forma_contacto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: 'Arvo', serif;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.forma_contacto img{
+    margin: 10px;
+    width: 20%;
+}
+
+#mapa iframe{
+height: 250px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+/*SECCIÓN DE COMENTARIOS*/
+#comentarios_main{
+    padding: 40px;
+}
+
+#comentarios_main h1{
+    color: var(--naranja);
+    text-align: center;
+    font-family: 'Alumni Sans SC', sans-serif;
+}
+
+#form_comentario img{
+    width: 5%;
+}
+
+#form_comentario{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+#form_comentario textarea{
+    width: 100%;
+    height: 50px;
+    background-color: var(--gris);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.589);
+    border-color: white;
+    padding: 5px;
+    font-family: 'Arvo', serif;
+    border-style: none;
+    border: solid,1px,white;
+}
+
+#comentarios{
+    color: white;
+    font-family: 'Arvo', serif;
+}
+
+.comentario{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.comentario p{
+    margin: 10px;
+}
+
+.info_user{
+    display: flex;
+    align-items: center;
+}
+
+.info_user img{
+    width: 5%;
+}
+
+.info_user h4{
+    color: var(--naranja);
+}
+
+.social_stats img{
+    width: 25px;
+    margin: 3px;
+}
+
+.social_stats{
+    display: flex;
+    align-items: center;
+}
