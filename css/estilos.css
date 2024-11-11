@@ -191,5 +191,17 @@ body{
 }
 
 
-
+@media (max-width:1025px) {
+    .produccion{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .card_1{
+        width: 80%;
+    }
+}
 

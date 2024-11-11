@@ -26,39 +26,31 @@ header{
     display: none;
 }
 
-#out_drop_Menu{
-    font-size: 30px;
-    cursor: pointer;
-    font-family: Alumni Sans SC, sans-serif;
-    
-}
-
-#out_drop_Menu:hover{
-    color: #F58634;
-}
 
 /* MENU DROP */
 #dropMenu{
+    display: none;
     position:absolute;
     right: 2rem;
-    top: 100px;
+    top: 80px;
     height: 0;
     background-color: #414345;
-    padding: 20px;
     border-radius: 20px;
-    display: none;
+    overflow: hidden;
 }
 #dropMenu.open{
-    height: 300px;
+    height: auto;
 }
 
 #dropMenu li{
+    padding: 0.8rem;
     list-style: none;
     color: white;
     font-family: Alumni Sans SC, sans-serif;
     font-weight: bold;
-    margin: 20px;
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #dropMenu a{
@@ -113,13 +105,17 @@ footer{
 
 /* NAVEGACIÓN RESPONSIVE */
 @media (max-width:1025px) {
+    /* NAVEGACIÓN */
     .menu li a {
         display: none;
     }
     .menu-toggle{
         display: block;
     }
-    .dropMenu{
+    #dropMenu{
         display: block;
     }
+
+    /* SECCIÓN PRODUCCIÓN */
+    
 }

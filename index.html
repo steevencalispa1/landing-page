@@ -17,21 +17,18 @@
         <img src="img/LOGO_NEW_AL.png" alt="logo" class="img-logo">
         <nav>
             <ul class="menu">
-                <li><a href="">ETIQUETAS</a></li>
-                <li><a href="">ETIQUETAS PERSONALIZADAS <a></li>
-                <li><a href="">DONDE COMPRAR</a></li>
-                <li><a href="">COMENTARIOS</a></li>
+                <li><a href="#EtiquetasDisponibles">ETIQUETAS</a></li>
+                <li><a href="#gal_section">ETIQUETAS PERSONALIZADAS <a></li>
+                <li><a href="#contactanos_main">DONDE COMPRAR</a></li>
+                <li><a href="#comentarios_main">COMENTARIOS</a></li>
             </ul>
-            <div class="menu-toggle" onclick="toggleMenu()"><i>☰</i></div>
+            <div class="menu-toggle"><i>☰</i></div>
         </nav>
         <div id="dropMenu">
-            <ul>
-                <li><a href="">ETIQUETAS</a></li>
-                <li><a href="">ETIQUETAS PERSONALIZADAS <a></li>
-                <li><a href="">DONDE COMPRAR</a></li>
-                <li><a href="">COMENTARIOS</a></li>
-                <li id="out_drop_Menu">x</li>
-            </ul>
+                <li><a href="#EtiquetasDisponibles">ETIQUETAS</a></li>
+                <li><a href="#gal_section">ETIQUETAS PERSONALIZADAS <a></li>
+                <li><a href="#contactanos_main">DONDE COMPRAR</a></li>
+                <li><a href="#comentarios_main">COMENTARIOS</a></li>
         </div>
     </div>
     </header>
@@ -39,9 +36,9 @@
     <script>
         const toggleBtn = document.querySelector('.menu-toggle')
         const toggleBtnIcon = document.querySelector('.menu-toggle i')
-        const dropMenu = document.querySelector('.dropMenu')
+        const dropMenu = document.querySelector('#dropMenu')
 
-        toggleBtn.onclick=function(){
+        toggleBtn.onclick = function(){
             dropMenu.classList.toggle('open')
         }
     </script>
@@ -53,7 +50,7 @@
     </section>
 
     <!--Seccion de produccion-->
-    <section class="produccion">
+    <section class="produccion" id="produccion">
         <div class="img_trabajador">
             <img src="imagenes/area_trabajo.jpeg" alt="trabajador">
         </div>
@@ -64,7 +61,7 @@
     </section>
 
     <!--Seccion tipo de etiquetas-->
-    <div class="titulo">
+    <div class="titulo" id="EtiquetasDisponibles">
         <h1>¿CUALES SON LAS ETIQUETAS DISPONIBLES?</h1>
     </div>
     <section class="cards">
