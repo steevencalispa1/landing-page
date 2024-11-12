@@ -1,7 +1,13 @@
 header{
-    background:#414345; /* Cambia los colores como prefieras */
+    background:#414345; 
     padding: 5px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    z-index: 1000;
+    height: 60px;
 }
 .herder_pincipal{
     justify-content: center;
