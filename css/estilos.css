@@ -142,7 +142,7 @@ body{
     background-size: cover;
     background-position: center;
     transition: transform 0.3s ease;
-    z-index: -1; /* Coloca la imagen detrás del contenido */
+    z-index: -1;
     border-radius: 10px;
 }
 
@@ -180,7 +180,7 @@ body{
 }
 
 .card_1:hover::before {
-    transform: scale(1.1); /* Expande la imagen */
+    transform: scale(1.1);
 }
 
 .txt_1 {
