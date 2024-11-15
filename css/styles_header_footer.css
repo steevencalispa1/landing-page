@@ -105,7 +105,7 @@ footer{
 .menu a:hover{
     color: #ffffff; /* Cambia el color del texto al pasar el cursor sobre las opciones. */
 }
-.pie a:hover{
+.pie li{
     color: #F58634;
 }
 
@@ -122,6 +122,20 @@ footer{
         display: block;
     }
 
+    .footer-principal{
+        display: flex;
+        flex-direction: column;
+    }
+    .pie{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pie li{
+        text-align: center;
+        margin: 5px;
+    }
     /* SECCIÓN PRODUCCIÓN */
     
 }
