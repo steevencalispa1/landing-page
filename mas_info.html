@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMERICAN LABEL</title>
+    <link rel="stylesheet" href="./css/mas_info.css">
+    <link rel="stylesheet" href="./css/styles_header_footer.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,111.3,200..1000;1,6..12,111.3,200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/LOGO_NEW_AL.png">
+</head>
+<body>
+    <div class="container_btn_wsp">
+        <a href="https://wa.me/0998239786?text=Envia%20un%20mensaje%20para%20consultas" target="_blank">
+            <img class="btn_wsp" src="imagenes/icon-whatsapp.svg">
+        </a>
+    </div>
+    <header>
+        <div class="herder_pincipal">
+            <img src="img/LOGO_NEW_AL.png" alt="logo" class="img-logo">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="#EtiquetasDisponibles">ETIQUETAS</a></li>
+                    <li><a href="#gal_section">ETIQUETAS PERSONALIZADAS <a></li>
+                    <li><a href="#contactanos_main">DONDE COMPRAR</a></li>
+                    <li><a href="#comentarios_main">COMENTARIOS</a></li>
+                </ul>
+                <div class="menu-toggle"><i>☰</i></div>
+            </nav>
+            <div id="dropMenu">
+                <li><a href="#Inicio">INICIO</a></li>
+                <li><a href="#EtiquetasDisponibles">ETIQUETAS</a></li>
+                <li><a href="#gal_section">ETIQUETAS PERSONALIZADAS <a></li>
+                <li><a href="#contactanos_main">DONDE COMPRAR</a></li>
+                <li><a href="#comentarios_main">COMENTARIOS</a></li>
+            </div>
+        </div>
+    </header>
+       
+        <script>
+            const toggleBtn = document.querySelector('.menu-toggle')
+            const toggleBtnIcon = document.querySelector('.menu-toggle i')
+            const dropMenu = document.querySelector('#dropMenu')
+    
+            toggleBtn.onclick = function(){
+                dropMenu.classList.toggle('open')
+            }
+        </script>
+    <section id="inicio_sec">
+        <h1>TODOS NUESTROS PRODUCTOS</h1>
+        <!--boton-->
+        <div class="boton_modal_1">
+            <label for="btn_modal_1">
+                ¿Como Comprar?
+            </label>
+        </div>
+        <!--fin de boton-->
+        <!--ventana modal-->
+        <input type="checkbox" id="btn_modal_1">
+        <div class="container_modal_1">
+            <div class="content_modal_1">
+                <h2>!Bienvenido a American Label¡</h2>
+                <p>Para realizar una comprar sigue las siguientes indicaciones. <br> <br> <b>Opcion 1. (Asesoramiento perzonalizada)</b> <br> 1. Click en el logo de WhatsApp. <br> 2. Envianos un mensaje para realizar un pedido de etuiquetas. <br> <br> <b>Opcion 2. (Compra inmediata)</b> <br> 1. Ingresa a nuentra galeria. <br> 2. Navega por todas la etiquetas que hay en stock <br> 3. Una vez de haber escojido una etiqueta de tu agrado haga click en el logo de WhatsApp. <br> 4. Dejanos un mensaje con el nombre de la etiqueta y la cantidad de etiquetas que desea adquirir.
+                </p>
+                <div class="btn_cerrar_1">
+                    <label for="btn_modal_1">Cerrar</label>
+                </div>
+            </div>
+            <label for="btn_modal_1" class="cerrar_modal_1"></label>
+        </div>
+        <!--fin de ventana modal-->
+    </section>
+    
+    <Section id="productos">
+        <div class="producto">
+            <div>
+                <img src="img/EtMarcas.jpg" alt="">
+            </div>
+            <div class="txt_des">
+                <h3>BARRIDO 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, minima, numquam doloribus velit cupiditate consequuntur temporibus dolore iusto accusantium nihil praesentium? Consequuntur iste minima, commodi recusandae quibusdam ex sunt voluptatibus.</p>
+            </div>
+        </div>
+
+        <div class="producto">
+            <div class="txt_des">
+                <h3>BARRIDO 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, minima, numquam doloribus velit cupiditate consequuntur temporibus dolore iusto accusantium nihil praesentium? Consequuntur iste minima, commodi recusandae quibusdam ex sunt voluptatibus.</p>
+            </div>
+            <div>
+                <img src="img/Barrido2.jpg" alt="">
+            </div>
+        </div>
+        <div class="producto">
+            <div>
+                <img src="img/EtMarcas2.jpg" alt="">
+            </div>
+            <div class="txt_des">
+                <h3>BARRIDO 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, minima, numquam doloribus velit cupiditate consequuntur temporibus dolore iusto accusantium nihil praesentium? Consequuntur iste minima, commodi recusandae quibusdam ex sunt voluptatibus.</p>
+            </div>
+        </div>
+
+        <div class="producto">
+            <div class="txt_des">
+                <h3>BARRIDO 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, minima, numquam doloribus velit cupiditate consequuntur temporibus dolore iusto accusantium nihil praesentium? Consequuntur iste minima, commodi recusandae quibusdam ex sunt voluptatibus.</p>
+            </div>
+            <div>
+                <img src="img/EtAnimales.jpg" alt="">
+            </div>
+        </div>
+        <div class="producto">
+            <div>
+                <img src="img/EtiquetaFlor2.jpg" alt="">
+            </div>
+            <div class="txt_des">
+                <h3>BARRIDO 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, minima, numquam doloribus velit cupiditate consequuntur temporibus dolore iusto accusantium nihil praesentium? Consequuntur iste minima, commodi recusandae quibusdam ex sunt voluptatibus.</p>
+            </div>
+        </div>
+
+        <div class="producto">
+            <div class="txt_des">
+                <h3>BARRIDO 1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, minima, numquam doloribus velit cupiditate consequuntur temporibus dolore iusto accusantium nihil praesentium? Consequuntur iste minima, commodi recusandae quibusdam ex sunt voluptatibus.</p>
+            </div>
+            <div>
+                <img src="img/EliquetasLargas.jpg" alt="">
+            </div>
+        </div>
+    </Section>
+    <footer>
+        <!--PARTE DE IVAN Y PABLO-->
+        <div class="footer-principal">
+            <img src="img/LOGO_NEW_AL.png" alt="logo" class="img-logo">
+            <nav>
+                <ul class="pie">
+                <li>Derechos Reservados</li>
+                <li>@Sebastian Chico</li>
+                <li>@Steeven Calispa</li>
+                <li>@Paul Sandoval</li>
+                <li>@Ivan Castillo</li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

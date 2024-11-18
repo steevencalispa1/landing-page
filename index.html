@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="./css/bodyStyles.css">
     <link rel="stylesheet" href="./css/styles_header_footer.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Alumni+Sans?query=Alumni+Sans+SC">
-    
+    <link rel="icon" href="img/LOGO_NEW_AL.png">
 </head>
 <body>
+    <div class="container_btn_wsp">
+        <a href="https://wa.me/0998239786?text=Envia%20un%20mensaje%20para%20consultas" target="_blank">
+            <img class="btn_wsp" src="imagenes/icon-whatsapp.svg">
+        </a>
+    </div>
     <header>
         <!--parte de IVAN Y PABLO-->
     <div class="herder_pincipal">
@@ -44,11 +49,12 @@
             dropMenu.classList.toggle('open')
         }
     </script>
+
     <!--Seccion de presentacion-->
     <section class="presentacion" id="Inicio">
         <h1 class="empresa">AMERICAN LABEL</h1>
         <p class="text_presentacion">“Somos pioneros en innovación de maquinaria para ofrecer productos de alta calidad a nuestros clientes.”</p>
-        <button class="btn_info">MAS INFORMACION</button>
+        <button class="btn_info"><a href="https://marcas-etiquetas.com/etiquetas-tejidas/" target="_blank">MAS INFORMACION</a></button>
     </section>
 
     <!--Seccion de produccion-->
@@ -57,36 +63,61 @@
             <img src="imagenes/area_trabajo.jpeg" alt="trabajador">
         </div>
         <div class="text_produccion">
-            <h1>¿COMO REALIZAMOS NUESTROS PRODUCTOS ?</h1>
+            <h1>¿COMO REALIZAMOS NUESTROS PRODUCTOS?</h1>
             <p>En nuestra fábrica de etiquetas textiles, combinamos tecnología de punta y precisión artesanal para crear etiquetas de alta calidad. Desde la selección cuidadosa de materiales resistentes hasta el diseño detallado, nos aseguramos de que cada etiqueta refleje la identidad de su marca. Utilizamos maquinaria avanzada para tejer o bordar los diseños directamente en el tejido, logrando acabados nítidos y duraderos. </p>
         </div>
     </section>
 
     <!--Seccion tipo de etiquetas-->
-    <div class="titulo" id="EtiquetasDisponibles">
-        <h1>¿CUALES SON LAS ETIQUETAS DISPONIBLES?</h1>
-    </div>
-    <section class="cards">
-        <div class="card_1 card_1a">
-            <h2 class="txt_1">TAFETA</h2>
-            <p>La tafeta es un tipo de tejido sencillos y fino. En  el texto de las etiquetas tejidas, las etiquetas de tafeta son ligeras y duraderas, y más economicas; se usa más amenudo para la informacion de tallas, instrucciones de cuidado para la ropa de cama</p>
+    <section id="EtiquetasDisponibles">
+        <div class="titulo">
+            <h1>¿CUALES SON LAS ETIQUETAS DISPONIBLES?</h1>
         </div>
-        <div class="card_1 card_1b">
-            <h2 class="txt_2">DAMASCO</h2>
-            <p>Las etiquetas de  damasco son de alta definicion y ofrecen una textura mas suave que las tafeta. Permiten un mayor nivel de detalle en los diseños, lo que las hace idelaes  para logotipos complejos o pequeños textos. Se pueden diseñar con texturas, relieves y ligamentos.</p>
-        </div>
-        <div class="card_1 card_1c">
-            <h2 class="txt_3">SATIN</h2>
-            <p>Las etiquetas de satín tienen un brillo distintivo y una textura muy suave , lo que las hace sentir lujosas al tacto. Suelen utilizarse para prendas de alta gama, lencería y camisetas y ternos para caballero, debido a su sauvidad y apariencia elegante.</p>
+        <div class="cards">
+            <div class="card_1 card_1a">
+                <h2 class="txt_1">TAFETA</h2>
+                <p>La tafeta es un tipo de tejido sencillos y fino. En  el texto de las etiquetas tejidas, las etiquetas de tafeta son ligeras y duraderas, y más economicas; se usa más amenudo para la informacion de tallas, instrucciones de cuidado para la ropa de cama</p>
+            </div>
+            <div class="card_1 card_1b">
+                <h2 class="txt_2">DAMASCO</h2>
+                <p>Las etiquetas de  damasco son de alta definicion y ofrecen una textura mas suave que las tafeta. Permiten un mayor nivel de detalle en los diseños, lo que las hace idelaes  para logotipos complejos o pequeños textos. Se pueden diseñar con texturas, relieves y ligamentos.</p>
+            </div>
+            <div class="card_1 card_1c">
+                <h2 class="txt_3">SATIN</h2>
+                <p>Las etiquetas de satín tienen un brillo distintivo y una textura muy suave , lo que las hace sentir lujosas al tacto. Suelen utilizarse para prendas de alta gama, lencería y camisetas y ternos para caballero, debido a su sauvidad y apariencia elegante.</p>
+            </div>
         </div>
     </section>
+
+    <!--boton-->
+    <div class="boton_modal">
+        <label for="btn_modal">
+            ¿Como Comprar?
+        </label>
+    </div>
+    <!--fin de boton-->
+    <!--ventana modal-->
+    <input type="checkbox" id="btn_modal">
+    <div class="container_modal">
+        <div class="content_modal">
+            <h2>!Bienvenido a American Label¡</h2>
+            <p>Para realizar una comprar sigue las siguientes indicaciones. <br> <br> <b>Opcion 1. (Asesoramiento perzonalizada)</b> <br> 1. Click en el logo de WhatsApp. <br> 2. Envianos un mensaje para realizar un pedido de etuiquetas. <br> <br> <b>Opcion 2. (Compra inmediata)</b> <br> 1. Ingresa a nuentra galeria. <br> 2. Navega por todas la etiquetas que hay en stock <br> 3. Una vez de haber escojido una etiqueta de tu agrado haga click en el logo de WhatsApp. <br> 4. Dejanos un mensaje con el nombre de la etiqueta y la cantidad de etiquetas que desea adquirir.
+            </p>
+            <div class="btn_cerrar">
+                <label for="btn_modal">Cerrar</label>
+            </div>
+        </div>
+        <label for="btn_modal" class="cerrar_modal"></label>
+    </div>
+    <!--fin de ventana modal-->
+
 
     <!--PARTE DE SEBASTIAN-->
     <div id="gal_section">
         <div id="img_info">
             <h2>ETIQUETAS PERSONALIZADAS</h2>
             <p>Nuestras etiquetas personalizadas están diseñadas para destacar su marca con estilo y durabilidad. Ofrecemos una variedad de materiales y acabados para adaptarnos a sus necesidades, asegurando que cada detalle desde el color hasta el tejido refleje la identidad de su producto.</p>
-            <button>MAS INFORMACION</button>
+            <button><a href="mas_info.html">Visita nuestra galeria</a></button>
         </div>
         <div id="galeria">
             <div class="box"><img src="./img/Barrido2.jpg" alt=""></div>
@@ -105,35 +136,18 @@
             <h2>CONTACTANOS</h2>
             <form>
                 <label for="">Nombre:</label>
-                <textarea name="nombre" id="txt_nombre"></textarea>
+                <input type="text" placeholder="Arturo Borja" required>
                 <label for="">Correo:</label>
-                <textarea name="" id="txt_correo"></textarea>
+                <input type="email"  name='email' placeholder="ejemplo@ejemplo.com" required>
                 <label for="">Mensaje:</label>
-                <textarea name="" id="txt_mensaje"></textarea>
+                <textarea style="resize: none;" name="" id="txt_mensaje" placeholder="Escribe tu mensaje..." required></textarea>
                 <button>Enviar</button>
             </form>
         </div>
         <div id="con_der">
             <p>Estamos aquí para ayudarlo a darle vida a su marca. Si tiene preguntas o desea más información sobre nuestras etiquetas personalizadas, no dude en contactarnos. Nuestro equipo estará encantado de asesorarlo y ofrecerle soluciones que se adapten a sus necesidades.</p>
-            <div id="formas">
-                <div class="forma_contacto">
-                    <img src="./img/whatsapp.png" alt="">
-                    <label for="">+593 99 999 9999</label>
-                    <label for="">Asesor</label>
-                </div>
-                <div class="forma_contacto">
-                    <img src="./img/whatsapp.png" alt="">
-                    <label for="">+593 99 999 9999</label>
-                    <label for="">Atención al cliente</label>
-                </div>
-                <div class="forma_contacto">
-                    <img src="./img/email.png" alt="">
-                    <label for="">example@example.com</label>
-                    <label for="">Envianos un email</label>
-                </div>
-            </div>
             <div id="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11180.19419365882!2d-111.9995708!3d40.7317412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f31ffbef5f59%3A0xc0e65722c6727e4f!2sAmerican%20Label!5e1!3m2!1sen!2sec!4v1731197641178!5m2!1sen!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.0148062975672!2d-78.4719502!3d-0.11321719999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f811f4c97c9%3A0xac3fd6698576c803!2sAMERICALABEL%20CIA%20LTDA!5e1!3m2!1ses-419!2sec!4v1731739009966!5m2!1ses-419!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -141,7 +155,7 @@
         <h1>DEJA TU COMENTARIO</h1>
         <div id="form_comentario">
             <img src="./img/user.png" alt="">
-            <textarea name="" id="dejar_com">Escribe un comentario</textarea>
+            <textarea name="" id="dejar_com" placeholder="Deja un comentario..."></textarea>
         </div>
         <div id="comentarios">
             <div class="comentario">

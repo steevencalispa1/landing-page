@@ -48,6 +48,9 @@
     border-style: none;
     height: 30px;
     border-radius: 8px;
+}
+#img_info button a{
+    text-decoration: none;
     color: white;
     font-family: 'Alumni Sans SC', sans-serif;
 }
@@ -115,11 +118,24 @@ form textarea{
     background-color: var(--gris);
     border-style: none;
     margin: 5px;
+    color: white;
+    padding: 5px;
+}
+
+form input {
+    background-color: var(--gris);
+    color: white;
+    border-style: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 #txt_mensaje{
     height: 300px;
     margin: 5px;
+    color: white;
+    padding: 10px;
 }
 
 form button{
@@ -154,6 +170,9 @@ form button:hover{
 #con_der p{
     color: white;
     font-family: 'Arvo', serif;
+    padding-bottom: 60px;
+    text-align: justify;
+    width: 90%;
 }
 
 #formas{
@@ -179,7 +198,6 @@ form button:hover{
 }
 
 #mapa iframe{
-height: 250px;
     width: 90%;
     border-radius: 10px;
 }
@@ -205,6 +223,7 @@ height: 250px;
     margin: 10px;
     margin-bottom: 50px;
 }
+
 #form_comentario textarea{
     width: 100%;
     height: 50px;
@@ -260,10 +279,12 @@ height: 250px;
         display: flex;
         flex-direction: column;
     }
+
     #img_info{
         width: 100%;
         height: 300px;
     }
+
     #galeria{
         width: 100%;
     }
@@ -273,6 +294,7 @@ height: 250px;
         flex-direction: column;
         align-items: center;
     }
+
     #con_izq{
         width: 90%;
         display: flex;
