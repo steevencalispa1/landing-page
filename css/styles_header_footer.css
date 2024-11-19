@@ -13,6 +13,10 @@ header{
     justify-content: center;
     display: flex;
     align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .herder_pincipal nav{
@@ -81,34 +85,81 @@ header{
     font-family: Alumni Sans SC, sans-serif;
     font-weight: bold;
 }
+/* FOOTER */
 footer{
     background-color: #181717;
-    padding: 5px;
+    padding: 20px;
 }
+
 .footer-principal{
     justify-content: center;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    color: white;
 }
+
 .pie{
     list-style: none;
+    text-align: center;
+    margin-top: 20px;
 }
+
 .pie li{
     display: inline;
-    margin-left: 50px;
+    margin-left: 20px;
 }
+
 .pie a{
     color: white;
     text-decoration: none;
-    font-family: Alumni Sans SC, sans-serif;
+    font-family: 'Alumni Sans SC', sans-serif;
 }
-.menu a:hover{
-    color: #ffffff; /* Cambia el color del texto al pasar el cursor sobre las opciones. */
-}
+
 .pie li{
     color: #F58634;
 }
 
+/* Estilo del mensaje de "Contactanos" */
+.contactanos-footer{
+    font-family: 'Alumni Sans SC', sans-serif;
+    font-size: 20px;
+    color: #F58634;
+    margin-bottom: 10px;
+     ;
+}
+
+/* Estilos de redes sociales */
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+
+.social-links a{
+    margin: 0 15px;
+    font-size: 30px;
+    color: white;
+    
+}
+.social-links img{
+    width: 25px;
+
+}
+
+.social-links a:hover{
+    color: #F58634;
+}
+
+/* Copyright */
+.copyright{
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    font-family: 'Arvo', serif;
+}
 /* NAVEGACIÓN RESPONSIVE */
 @media (max-width:1025px) {
     /* NAVEGACIÓN */
