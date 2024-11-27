@@ -4,24 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AMERICAN LABEL</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/bodyStyles.css">
-    <link rel="stylesheet" href="./css/styles_header_footer.css">
+    <link rel="stylesheet" href="/src/css/estilos.css">
+    <link rel="stylesheet" href="/src/css/bodyStyles.css">
+    <link rel="stylesheet" href="/src/css/styles_header_footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,111.3,200..1000;1,6..12,111.3,200..1000&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/LOGO_NEW_AL.png">
+    <link rel="icon" href="/src/img/LOGO_NEW_AL.png">
 </head>
 <body>
+    <!-- Boton interactivo de WSP -->
     <div class="container_btn_wsp">
         <a href="https://wa.me/0998239786?text=Envia%20un%20mensaje%20para%20consultas" target="_blank">
-            <img class="btn_wsp" src="imagenes/icon-whatsapp.svg">
+            <img class="btn_wsp" src="src/img/icon-whatsapp.svg">
         </a>
     </div>
     <header>
         <!--parte de IVAN Y PABLO-->
     <div class="herder_pincipal">
-        <img src="img/LOGO_NEW_AL.png" alt="logo" class="img-logo">
+        <img src="/src/img/LOGO_NEW_AL.png" alt="logo" class="img-logo">
         <nav>
             <ul class="menu">
                 <li><a href="#Inicio">INICIO</a></li>
@@ -41,16 +42,6 @@
         </div>
     </div>
     </header>
-   
-    <script>
-        const toggleBtn = document.querySelector('.menu-toggle')
-        const toggleBtnIcon = document.querySelector('.menu-toggle i')
-        const dropMenu = document.querySelector('#dropMenu')
-
-        toggleBtn.onclick = function(){
-            dropMenu.classList.toggle('open')
-        }
-    </script>
 
     <!--Seccion de presentacion-->
     <section class="presentacion" id="Inicio">
@@ -62,7 +53,7 @@
     <!--Seccion de produccion-->
     <section class="produccion" id="produccion">
         <div class="img_trabajador">
-            <img src="imagenes/area_trabajo.jpeg" alt="trabajador">
+            <img src="/src/img/PersonaTrabajando.jpg" alt="trabajador">
         </div>
         <div class="text_produccion">
             <h1>¿COMO REALIZAMOS NUESTROS PRODUCTOS?</h1>
@@ -75,6 +66,7 @@
         <div class="titulo">
             <h1>¿CUALES SON LAS ETIQUETAS DISPONIBLES?</h1>
         </div>
+        <!-- diseño estilo cartas -->
         <div class="cards">
             <div class="card_1 card_1a">
                 <h2 class="txt_1">TAFETA</h2>
@@ -97,8 +89,7 @@
             ¿Como Comprar?
         </label>
     </div>
-    <!--fin de boton-->
-    <!--ventana modal-->
+    <!--ventana flotante-->
     <input type="checkbox" id="btn_modal">
     <div class="container_modal">
         <div class="content_modal">
@@ -111,24 +102,22 @@
         </div>
         <label for="btn_modal" class="cerrar_modal"></label>
     </div>
-    <!--fin de ventana modal-->
-
-
+    
     <!--PARTE DE SEBASTIAN-->
     <div id="gal_section">
         <div id="img_info">
             <h2>ETIQUETAS PERSONALIZADAS</h2>
             <p>Nuestras etiquetas personalizadas están diseñadas para destacar su marca con estilo y durabilidad. Ofrecemos una variedad de materiales y acabados para adaptarnos a sus necesidades, asegurando que cada detalle desde el color hasta el tejido refleje la identidad de su producto.</p>
-            <button><a href="mas_info.html">Visita nuestra galeria</a></button>
+            <button><a href="/src/pages/mas_info.html">Visita nuestra galeria</a></button>
         </div>
         <div id="galeria">
-            <div class="box"><img src="./img/Barrido2.jpg" alt=""></div>
-            <div class="box"><img src="./img/Barrido3.jpg" alt=""></div>
-            <div class="box"><img src="./img/EtiquetaFlor.jpg" alt=""></div>
-            <div class="box"><img src="./img/EtMarcas2.jpg" alt=""></div>
-            <div class="box"><img src="./img/EtAnimales.jpg" alt=""></div>
-            <div class="box"><img src="./img/EtMarcas.jpg" alt=""></div>
-            <div class="box"><img src="./img/EtFutbool.jpg" alt=""></div>
+            <div class="box"><img src="/src/img/Barrido2.jpg" alt=""></div>
+            <div class="box"><img src="/src/img/Barrido3.jpg" alt=""></div>
+            <div class="box"><img src="/src/img/EtiquetaFlor.jpg" alt=""></div>
+            <div class="box"><img src="/src/img/EtMarcas2.jpg" alt=""></div>
+            <div class="box"><img src="/src/img/EtAnimales.jpg" alt=""></div>
+            <div class="box"><img src="/src/img/EtMarcas.jpg" alt=""></div>
+            <div class="box"><img src="/src/img/EtFutbool.jpg" alt=""></div>
         </div>
 
     </div>
@@ -146,31 +135,6 @@
                 <button type="button" id="enviarBtn">Enviar</button>
             </form>
         </div>
-        <script>
-            document.getElementById('enviarBtn').addEventListener('click', function() {
-                const nombre = document.getElementById('nombre').value.trim();
-                const email = document.getElementById('email').value.trim();
-                const mensaje = document.getElementById('txt_mensaje').value.trim();
-
-                if (!nombre) {
-                    alert("Por favor, ingresa tu nombre.");
-                    return;
-                }
-
-                if (!email) {
-                    alert("Por favor, ingresa tu correo electrónico.");
-                    return;
-                }
-
-                if (!mensaje) {
-                    alert("Por favor, escribe tu mensaje.");
-                    return;
-                }
-                
-                alert("Formulario enviado correctamente");
-                document.getElementById('contactForm').reset();
-            }); 
-        </script>
         <div id="con_der">
             <p>Estamos aquí para ayudarlo a darle vida a su marca. Si tiene preguntas o desea más información sobre nuestras etiquetas personalizadas, no dude en contactarnos. Nuestro equipo estará encantado de asesorarlo y ofrecerle soluciones que se adapten a sus necesidades.</p>
             <div id="mapa">
@@ -181,13 +145,13 @@
     <section id="comentarios_main">
         <h1>DEJA TU COMENTARIO</h1>
         <div id="form_comentario">
-            <img src="./img/user.png" alt="">
+            <img src="/src/img/user.png" alt="">
             <textarea name="" id="dejar_com" style="resize: none;" placeholder="Deja un comentario..."></textarea>
         </div>
         <div id="comentarios">
             <div class="comentario">
                 <div class="info_user">
-                    <img src="./img/user.png" alt="">
+                    <img src="/src/img/user.png" alt="">
                     <div class="name_con">
                         <h4>Nadia Martinez</h4>
                         <label for="">Hace un mes</label>
@@ -195,13 +159,13 @@
                 </div>
                     <p>Necesitaba etiquetas personalizadas para una colección de edición limitada, y no puedo estar más feliz con el resultado. El equipo fue muy atento y escucharon cada detalle que quería incluir. Las etiquetas quedaron justo como las imaginé, con una gran atención a los colores y al tipo de tela. ¡Gracias por la dedicación!</p>
                     <div class="social_stats">
-                        <img src="./img/socialLike.png" alt="">
+                        <img src="/src/img/socialLike.png" alt="">
                         <label for="">0</label>
                     </div>
             </div>
             <div class="comentario">
                 <div class="info_user">
-                    <img src="./img/user.png" alt="">
+                    <img src="/src/img/user.png" alt="">
                     <div class="name_con">
                         <h4>Nadia Martinez</h4>
                         <label for="">Hace 3 dias</label>
@@ -209,13 +173,13 @@
                     </div>
                     <p>Estoy muy contento con las etiquetas que encargamos para nuestra marca de ropa. La calidad del material es excelente, y la impresión de los logos es precisa y duradera. Además, el pedido llegó en el tiempo estimado, incluso para la gran cantidad que solicitamos. Definitivamente volveremos a trabajar con esta empresa</p>
                     <div class="social_stats">
-                        <img src="./img/socialLike.png" alt="">
+                        <img src="/src/img/socialLike.png" alt="">
                         <label for="">0</label>
                     </div>
             </div>
             <div class="comentario">
                 <div class="info_user">
-                    <img src="./img/user.png" alt="">
+                    <img src="/src/img/user.png" alt="">
                     <div class="name_con">
                         <h4>Nadia Martinez</h4>
                         <label for="">Hace un mes</label>
@@ -223,7 +187,7 @@
                     </div>
                     <p>Pedí etiquetas en masa para una línea de uniformes escolares y la empresa fue muy profesional. La calidad es muy buena y resistente, perfecta para el uso diario que tendrán las prendas. Además, los precios son muy competitivos y el servicio al cliente fue excelente durante todo el proceso. Recomendado al 100%</p>
                     <div class="social_stats">
-                        <img src="./img/socialLike.png" alt="">
+                        <img src="/src/img/socialLike.png" alt="">
                         <label for="">0</label>
                     </div>
             </div>
@@ -239,13 +203,13 @@
             <!-- Redes sociales -->
             <div class="social-links">
                 <a href="https://web.whatsapp.com/" target="_blank">
-                    <img src="img/Whatsapp.PNG" alt="Whatsapp">
+                    <img src="/src/img/Whatsapp.PNG" alt="Whatsapp">
                 </a>
                 <a href="https://facebook.com" target="_blank">
-                    <img src="img/facebook.PNG" alt="Facebook">
+                    <img src="/src/img/facebook.PNG" alt="Facebook">
                 </a>
                 <a href="https://instagram.com" target="_blank">
-                    <img src="img/instagram.PNG" alt="Instagram">
+                    <img src="/src/img/instagram.PNG" alt="Instagram">
                 </a>
             </div>
             <p>@american_label</p>
@@ -255,5 +219,6 @@
             </div>
         </div>
     </footer>
+    <script src="/src/js/pedidos.js"></script>
 </body>
 </html>

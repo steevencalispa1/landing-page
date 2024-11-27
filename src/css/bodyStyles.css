@@ -14,7 +14,7 @@
     
 }
 #img_info{
-    background:linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('/img/rolloAzul.jpg');
+    background:linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('/src/img/rolloAzul.jpg');
     width: 40%;
     margin: 0;
     padding: 0;

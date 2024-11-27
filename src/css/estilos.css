@@ -43,7 +43,7 @@ body{
 }
 
 .presentacion{
-    background: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('/imagenes/seccion_1.jpeg');
+    background: linear-gradient(to right, rgb(0 0 0 / .5),rgb(0 0 0 / .5)), url('/src/img/seccion_1.jpeg');
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,7 +184,7 @@ body{
 }
 
 .card_1a::before {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imagenes/tipo_tafeta.png');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/tipo_tafeta.png');
     padding: 10px;
     display: flex;
     width: 80%;
@@ -195,7 +195,7 @@ body{
 }
 
 .card_1b::before {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imagenes/tipo_damasco.png');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/tipo_damasco.png');
     padding: 10px;
     display: flex;
     width: 80%;
@@ -206,7 +206,7 @@ body{
 }
 
 .card_1c::before {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imagenes/tipo_satin.png');
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/img/tipo_satin.png');
     padding: 10px;
     display: flex;
     width: 80%;
