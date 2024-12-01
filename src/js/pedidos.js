@@ -31,3 +31,22 @@ document.getElementById('enviarBtn').addEventListener('click', function() {
     alert("Formulario enviado correctamente");
     document.getElementById('contactForm').reset();
 });
+
+// Muentra mensaje cada 2 segundos
+// variable control msj
+let mensaje_visible = false;
+
+setInterval(function() {
+    const ayuda = document.getElementById('ayuda');
+    
+    // sentencia para mostrar el msj si no es visible
+    if(!mensaje_visible) {
+        ayuda.style.display = 'block';
+        mensaje_visible = true;
+        // ayuda a ocultar el msj
+        setTimeout(function() {
+            ayuda.style.display = 'none';
+            mensaje_visible = false
+        }, 10000)
+    }
+},2000);

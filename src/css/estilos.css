@@ -11,6 +11,10 @@ body{
     user-select: none;
 }
 
+.title_txt {
+    color: var(--naranja);
+}
+
 .container_btn_wsp {
     background-color: #2e6329;
     border: #fff solid 1px;
@@ -40,6 +44,31 @@ body{
     100%{
         box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
     }
+}
+.ayuda_msj {
+    text-align: center;
+    display: none;
+    position: absolute;
+    right: 76px;
+    bottom:20px;
+    background-color: #2e6329;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    width: auto;
+    white-space: nowrap;
+}
+.flecha {
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    transform: translateY(-50%); 
+    border-left: 10px solid #2e6329; 
+    border-right: 10px solid transparent; 
+    border-top: 10px solid transparent ; 
+    border-bottom: 10px solid transparent;
 }
 
 .presentacion{
@@ -282,7 +311,6 @@ body{
     border-radius: 8px;
     border: solid, 2px, var(--naranja);
 }
-/*fin de boton modal*/
 /*ventana modal*/
 #btn_modal {
     display: none;

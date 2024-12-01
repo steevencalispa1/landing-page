@@ -18,10 +18,14 @@
         <a href="https://wa.me/0998239786?text=Envia%20un%20mensaje%20para%20consultas" target="_blank">
             <img class="btn_wsp" src="/src/img/icon-whatsapp.svg">
         </a>
+        <div id="ayuda" class="ayuda_msj">
+            ¿Necesitas ayuda?
+            <div class="flecha"></div>
+        </div>
     </div>
     <header>
         <div class="herder_pincipal">
-            <img src="/src/img/LOGO_NEW_AL.png" alt="logo" class="img-logo">
+            <a href="/index.html"><img src="/src/img/LOGO_NEW_AL.png" alt="logo" class="img-logo"></a>
             <nav>
                 <ul class="menu">
                     <li><a href="/index.html">INICIO</a></li>
@@ -37,15 +41,6 @@
             </div>
         </div>
     </header>
-       
-        <script>
-            const toggleBtn = document.querySelector('.menu-toggle')
-            const dropMenu = document.querySelector('#dropMenu')
-    
-            toggleBtn.onclick = function(){
-                dropMenu.classList.toggle('open')
-            }
-        </script>
     <section id="inicio_sec">
         <h1>TODOS NUESTROS PRODUCTOS</h1>
         <!--boton-->
@@ -153,5 +148,6 @@
             </div>
         </div>
     </footer>
+    <script src="/src/js/pedidos.js"></script>
 </body>
 </html>
