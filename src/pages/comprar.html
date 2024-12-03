@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dónde Comprar - American Label</title>
+    <!-- Archivo CSS -->
+    <link rel="stylesheet" href="COMPRAR.css">
+    <link rel="stylesheet" href="../css/styles_header_footer.css">
+    <link rel="stylesheet" href="../css/bodyStyles.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="./../../index.html">
+    <link rel="stylesheet" href="../css/comprar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,111.3,200..1000;1,6..12,111.3,200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" href="/src/img/LOGO_NEW_AL.png">
+    
+    <script>
+        // Esperar a que todo el contenido de la página esté cargado
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener el formulario
+            const form = document.getElementById('contactForm');
+            
+            // Agregar el evento de envío al formulario
+            form.addEventListener('submit', function(event) {
+                event.preventDefault(); // Evita que el formulario se envíe de forma tradicional
+                
+                // Simula el envío del correo
+                alert('¡Formulario enviado exitosamente!'); 
+                
+                // Restablecer los campos del formulario
+                form.reset(); 
+            });
+        });
+        </script>
+        
+
+    <style>
+        /* Estilo para la imagen de fondo del título */
+        .titulo-fondo {
+            position: relative;
+            text-align: center;
+            color: white;
+            height: 200px;
+            background-image: url('../img/img\ fondo\ comprar.PNG');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border-right: 2px transparent;
+        }
+        .titulo-animado {
+            font-size: 2.5rem;
+            font-weight: bold;
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid transparent;
+            animation: escribir 10s steps(30, end), parpadeo 0.4s step-end infinite alternate;
+        }
+        @keyframes escribir {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+        @keyframes parpadeo {
+            from {
+                border-color: transparent;
+            }
+            to {
+                border-color: transparent;
+            }
+        }
+        /* Estilo para la sección de imágenes */
+        .clientes-potenciales {
+            text-align: center;
+            margin: 50px 0;
+           
+        }
+        .clientes-potenciales h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .clientes-potenciales img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px;
+        }
+        .imagenes-contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            
+        }
+
+        /* Sección comentarios */
+        .comentarios .testimonios {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: #ffffff;
+        }
+        .comentarios .testimonio {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 250px;
+            text-align: center;
+            border-color: #272626;
+        }
+        .comentarios .testimonio img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        .comentarios .testimonio p {
+            font-style: italic;
+        }
+
+        /* Formularios y bordes */
+        #contacto form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 35px;
+            background-color: #272626;;
+            border: 1px solid #272626;;
+            border-radius: 8px;
+        }
+        #contacto input, #contacto textarea, #contacto button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #111111;
+            border-radius: 5px;
+            color: #4d4c4c;
+            
+        }
+        #contacto button {
+            background-color: #F58634;
+            color: black;
+            font-size: 19px;
+            border: none;
+            align-items: center;
+        } 
+        /* cambiar color de los labels de contactanos*/
+        #contacto label{
+            color: white;
+        }
+
+        /* Ajuste para íconos de redes sociales */
+        .social-links img {
+            max-width: 40px;
+            height: auto;
+            margin: 0 10px;
+        }
+
+        /* Estilo general para footer */
+        footer {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- Botón interactivo de WSP -->
+    <div class="container_btn_wsp">
+        <a href="https://wa.me/0998239786?text=Envia%20un%20mensaje%20para%20consultas" target="_blank">
+            <img class="btn_wsp" src="../img/icon-whatsapp.svg">
+        </a>
+        <div id="ayuda" class="ayuda_msj">
+            ¿Necesitas ayuda?
+            <div class="flecha"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="herder_pincipal">
+        <a href="index.html"><img src="../img/logo.png" alt="logo" class="img-logo"></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="../../index.html">INICIO</a></li>
+                <li><a href="../../index.html#EtiquetasDisponibles">ETIQUETAS</a></li>
+                <li><a href="../../index.html#gal_section">ETIQUETAS PERSONALIZADAS</a></li>
+                <li><a href="../pages/comprar.html">DONDE COMPRAR</a></li>
+                <li><a href="../pages/sellos.html">SELLOS</a></li>
+            </ul>
+            <div class="menu-toggle"><i>☰</i></div>
+        </nav>
+        <div id="dropMenu">
+            <li><a href="../../index.html">INICIO</a></li>
+            <li><a href="../../index.html#EtiquetasDisponibles">ETIQUETAS</a></li>
+            <li><a href="../../index.html#gal_section">ETIQUETAS PERSONALIZADAS <a></li>
+            <li><a href="../pages/comprar.html">DONDE COMPRAR</a></li>
+            <li><a href="../pages/sellos.html">SELLOS</a></li>
+        </div>
+    </div>
+
+        
+    <!-- Título con animación -->
+    <section class="titulo-fondo">
+        <div class="titulo-animado">DONDE COMPRAR</div>
+    </section>
+    <section id="informacion" class="informacion">
+        <h2>Información</h2>
+        <div class="info-contenedor">
+            <div class="info-item">
+                <h3>Teléfonos</h3>
+                <p>099 288 5876 / 0962 155 5591</p>
+                <p>02 352 0139</p>
+            </div>
+            <div class="info-item">
+                <h3>Dirección</h3>
+                <p>C.E E6-206 entre De las Arupos y de los Aceitunos, Quito – Ecuador</p>
+            </div>
+            <div class="info-item">
+                <h3>Email</h3>
+                <p>americanlabel@etiquetas.com</p>
+            </div>
+        </div>
+        <div class="info-iconos">
+            <div class="icono">
+                <img src="../img/icono1.png" alt="Icono medidas" />
+                <p>Envíanos las medidas referenciales y el número de colores o acabados que buscas.</p>
+            </div>
+            <div class="icono">
+                <img src="../img/icono2.png" alt="Icono cotización" />
+                <p>Con esa información podemos ayudarte con una cotización más específica.</p>
+            </div>
+            <div class="icono">
+                <img src="../img/icono3.png" alt="Icono asesoría" />
+                <p>Cuéntanos acerca de tu producto para poder asesorarte.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Mapa -->
+    <section id="ubicacion">
+        <h2>Encuéntranos aquí</h2>
+        <div style="width: 100%; height: 400px;">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3143.0148062975672!2d-78.4719502!3d-0.11321719999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d58f811f4c97c9%3A0xac3fd6698576c803!2sAMERICALABEL%20CIA%20LTDA!5e1!3m2!1ses-419!2sec!4v1731739009966!5m2!1ses-419!2sec" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Sección Formulario -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form id="contactForm" action="procesar" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+
+    <!-- Sección Clientes Potenciales -->
+    <section class="clientes-potenciales">
+        <h2>NUESTROS CLIENTES POTENCIALES</h2>
+        <div class="imagenes-contenedor">
+            <div class="client-img">
+                <img src="../img/clientes potenciales 1.PNG" alt="Imagen de cliente 1">
+            </div>
+            <div class="client-img">
+                <img src="../img/clientes potenciales 2.PNG" alt="Imagen de cliente 2">
+            </div>
+            <div class="client-img">
+                <img src="../img/clientes potenciales 3.PNG" alt="Imagen de cliente 3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Comentarios -->
+    <section class="comentarios">
+        <h2>Testimonios</h2>
+        <div class="testimonios">
+            <div class="testimonio">
+                <img src="../img/testimonio 1.PNG" alt="Cliente 1">
+                <p>"La mejor calidad en etiquetas y atención al cliente."</p>
+                <p><strong>Juan Pérez</strong></p>
+            </div>
+            <div class="testimonio">
+                <img src="../img/testimonio 2.PNG" alt="Cliente 2">
+                <p>"Servicio rápido y personalizado. 100% recomendados."</p>
+                <p><strong>María López</strong></p>
+            </div>
+            <div class="testimonio">
+                <img src="../img/testimonio 3.PNG" alt="Cliente 3">
+                <p>"Excelente calidad y precios competitivos."</p>
+                <p><strong>Andrea Rivera</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!--PARTE DE IVAN Y PABLO-->
+        <div class="footer-principal">
+            <p class="contactanos-footer">¡Contáctanos a través de nuestras redes sociales!</p>
+            
+            <!-- Redes sociales -->
+            <div class="social-links">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <img src="../img/whatsapp.png" alt="Whatsapp">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="../img/facebook.PNG" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="../img/instagram.PNG" alt="Instagram">
+                </a>
+            </div>
+            <p>@american_label</p>
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>&copy; 2024 AmericanLabel. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
