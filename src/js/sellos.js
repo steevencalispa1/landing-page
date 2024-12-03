@@ -1,20 +1,3 @@
-let mensaje_visible = false;
-
-setInterval(function() {
-    const ayuda = document.getElementById('ayuda');
-            
-    // sentencia para mostrar el msj si no es visible
-    if(!mensaje_visible) {
-        ayuda.style.display = 'block';
-        mensaje_visible = true;
-        // ayuda a ocultar el msj
-        etTimeout(function() {
-            ayuda.style.display = 'none';
-            mensaje_visible = false
-        }, 10000)
-    }
-},2000);
-
 // ventana de imagenes
 let currentImageIndex = 0;
 const images = document.querySelectorAll('.container_hijo img');
@@ -52,3 +35,22 @@ function openFullScreen() {
         modalImg.msRequestFullScreen();
     }
 }
+
+// Muentra mensaje cada 2 segundos
+// variable control msj
+let mensaje_visible = false;
+
+setInterval(function() {
+    const ayuda = document.getElementById('ayuda');
+    
+    // sentencia para mostrar el msj si no es visible
+    if(!mensaje_visible) {
+        ayuda.style.display = 'block';
+        mensaje_visible = true;
+        // ayuda a ocultar el msj
+        setTimeout(function() {
+            ayuda.style.display = 'none';
+            mensaje_visible = false
+        }, 5000)
+    }
+},2000);

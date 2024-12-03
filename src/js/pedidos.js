@@ -47,6 +47,6 @@ setInterval(function() {
         setTimeout(function() {
             ayuda.style.display = 'none';
             mensaje_visible = false
-        }, 10000)
+        }, 5000)
     }
 },2000);

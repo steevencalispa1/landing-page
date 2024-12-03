@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMERICAN LABEL</title>
+    <link rel="stylesheet" href="/src/css/estilos.css">
+    <link rel="stylesheet" href="/src/css/bodyStyles.css">
+    <link rel="stylesheet" href="/src/css/styles_header_footer.css">
+    <link rel="stylesheet" href="/src/css/sellos_styles.css">
+    <link rel="stylesheet" href="/src/css/styles_quienesSomos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,111.3,200..1000;1,6..12,111.3,200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" href="/landing-page/src/img/LOGO_NEW_AL.png">
+    
+</head>
+<body>
+    <!-- Boton interactivo de WSP -->
+    <div class="container_btn_wsp">
+        <a href="https://wa.me/0998239786?text=Envia%20un%20mensaje%20para%20consultas" target="_blank">
+            <img class="btn_wsp" src="/src/img/icon-whatsapp.svg">
+        </a>
+        <div id="ayuda" class="ayuda_msj">
+            ¿Necesitas ayuda?
+            <div class="flecha"></div>
+        </div>
+    </div>
+    <header>
+        <!--parte de IVAN Y PABLO-->
+    <div class="herder_pincipal">
+        <a href="/index.html"><img src="/src/img/LOGO_NEW_AL.png" alt="logo" class="img-logo"></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="/src/pages/sellos.html">SELLLOS</a></li>
+                <li><a href="/src/pages/quienes_somos.html">QUIENES SOMOS?</a></li>
+                
+            </ul>
+            <div class="menu-toggle"><i>☰</i></div>
+        </nav>
+        <div id="dropMenu">
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="/src/pages/sellos.html">SELLLOS</a></li>
+                <li><a href="/index.html">QUIENES SOMOS?</a></li>
+                
+        </div>
+    </div>
+    </header>
+
+    <section class="fondo_who">
+        <h1>¿Quienes somos?</h1>
+        <div id="typing-text"></div>
+        <script>
+            // Texto que se escribirá
+            const text = "Somos líderes en innovación y personalización, dedicados a crear etiquetas de alta calidad que destacan y agregan valor a cada producto. Nuestro compromiso es ofrecer soluciones únicas y sostenibles, diseñadas para resaltar la identidad de tu marca y satisfacer las necesidades de nuestros clientes.";
+            const typingElement = document.getElementById("typing-text");
+            let index = 0; // Índice para recorrer el texto
+            // Función para simular el efecto de escritura
+            function typeText() {
+                if (index < text.length) {
+                typingElement.textContent += text.charAt(index); // Añade carácter por carácter
+                index++;
+                setTimeout(typeText, 50); // Controla la velocidad de escritura (50ms entre caracteres)
+                } else {
+                typingElement.style.borderRight = "none"; // Quita el cursor al final
+                }
+            }
+            // Inicia el efecto de escritura
+            typeText();
+        </script>
+    </section>
+    
+    <section class="inicios">
+        <h1>Nuestros Inicios</h1>
+        <div class="container">
+            <div class="timeline">
+                <div class="event event-left">
+                    <div class="event-datel">1995 - Fundación</div>
+                    <div class="event-description">
+                        <p>Iniciamos nuestra travesía con la visión de ser líderes en la creación de etiquetas de ropa de alta calidad. La pasión por la innovación nos impulsó desde el primer día.</p>
+                    </div>
+                </div>
+                <div class="event event-right">
+                    <div class="event-dater">2005 - Expansión nacional</div>
+                    <div class="event-description">
+                        <p>Aumentamos nuestra presencia en todo el país, llevando nuestras etiquetas personalizadas a más marcas reconocidas.</p>
+                    </div>
+                </div>
+                <div class="event event-left">
+                    <div class="event-datel">2010 - Enfoque en sostenibilidad</div>
+                    <div class="event-description">
+                        <p>Comenzamos a incorporar prácticas ecológicas en nuestra producción, impulsando la sostenibilidad como un pilar fundamental de la empresa.</p>
+                    </div>
+                </div>
+                <div class="event event-right">
+                    <div class="event-dater">2020 - Adopción de nuevas tecnologías</div>
+                    <div class="event-description">
+                        <p>Implementamos las últimas tecnologías en nuestra producción, mejorando la eficiencia y calidad de nuestras etiquetas, adaptándonos a las demandas del mercado actual.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fundadores">
+        <h1>Fundadores</h1>
+        <div class="inf_fundadores">
+            <div class="fundadores_left">
+                <div class="fundador">
+                    <img src="/src/img/img_steeven.jpg" alt="foto_Steeven" class="foto_fundador">
+                    <div class="nombre_fundador">Steeven</div>
+                    <div class="descripcion_fundador">
+                        <p>Lidera la parte técnica de la empresa, enfocándose en crear soluciones innovadoras para la gestión y personalización de las etiquetas de ropa.</p>
+                    </div>
+                </div>
+                <div class="fundador">
+                    <img src="/src/img/img_sebas.jpg" alt="" class="foto_fundador">
+                    <div class="nombre_fundador">Sebas</div>
+                    <div class="descripcion_fundador">
+                        <p>Desarrolla plataformas intuitivas que facilitan a los clientes personalizar sus etiquetas de ropa de forma rápida y sencilla.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fundadores_right">
+                <div class="fundador">
+                    <img src="/src/img/img_paul.jpg" alt="" class="foto_fundador">
+                    <div class="nombre_fundador">Paul</div>
+                    <div class="descripcion_fundador">
+                        <p>Se encarga de optimizar los sistemas que permiten diseñar y producir etiquetas de ropa de manera eficiente y moderna.</p>
+                    </div>
+                </div>
+                <div class="fundador">
+                    <img src="/src/img/imag_ivan.jpg" alt="" class="foto_fundador">
+                    <div class="nombre_fundador">Ivan</div>
+                    <div class="descripcion_fundador">
+                        <p>Mejora la eficiencia de la producción y gestión de etiquetas, asegurando soluciones ágiles y precisas en cada etapa del proceso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <!--PARTE DE IVAN Y PABLO-->
+        <div class="footer-principal">
+            <p class="contactanos-footer">¡Contáctanos a través de nuestras redes sociales!</p>
+            
+            <!-- Redes sociales -->
+            <div class="social-links">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <img src="/src/img/Whatsapp.PNG" alt="Whatsapp">
+                </a>
+                <a href="https://facebook.com" target="_blank">
+                    <img src="/src/img/facebook.PNG" alt="Facebook">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="/src/img/instagram.PNG" alt="Instagram">
+                </a>
+            </div>
+            <p>@american_label</p>
+            <!-- Copyright -->
+            <div class="copyright">
+                <p>&copy; 2024 AmericanLabel. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="/src/js/sellos.js"></script>
+</body>
+</html>
