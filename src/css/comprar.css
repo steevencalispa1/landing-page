@@ -61,19 +61,18 @@ body {
     display: flex;
 }
 .menu li {
-    margin-right: 20px;
+    display: inline;
+    margin-left: 50px;
 }
 .menu li a {
     text-decoration: none;
-    color: white;
+    color: #F58634;
     font-weight: bold;
     padding: 5px 10px;
     border-radius: 4px;
     transition: background-color 0.3s;
 }
-.menu li a:hover {
-    background-color: #007bff;
-}
+
 .menu-toggle{
     padding: 20px;
 }
